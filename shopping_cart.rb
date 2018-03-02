@@ -3,9 +3,9 @@ require 'colorize'
 #CREATE SHOPPING LIST AND GIVE IT A NAME
 def create_shopping_list
   print "whats the name of your list: "
-  list_name = gets.chomp
+  @list_name = gets.chomp
   #create new hash
-  hash = {"name" => list_name, "items" => Array.new}
+  hash = {"name" => @list_name, "items" => Array.new}
   return hash
 end
 #DEFINE A METHOD TO ADD ITEMS TO THE LIST
